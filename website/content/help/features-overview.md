@@ -40,4 +40,4 @@ Light and dark themes, visual configuration, and a searchable settings dialog (`
 
 ## AI (optional, BYOK)
 
-AI is not required to use Nexus. When you want it, bring your own API key for Claude, OpenAI, Gemini, or xAI in Settings to use Ask, Edit, and Create modes. See [AI assistant](./ai-assistant).
+AI is not required to use Nexus. When you want it, bring your own API key for Claude, OpenAI, Gemini, or xAI in Settings to use Ask, Edit, and Create modes — including creating and fixing structured files (JSON, XML, YAML, TOML). See [AI assistant](./ai-assistant).

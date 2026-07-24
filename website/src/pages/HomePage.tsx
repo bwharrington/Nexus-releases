@@ -11,11 +11,11 @@ const CAPABILITIES = [
   },
   {
     title: 'Structured data',
-    body: 'CSV tables, JSON, XML, YAML, and TOML with format, validate, and minify tools — same app as your prose files.',
+    body: 'CSV tables, JSON, XML, YAML, and TOML with format, validate, and minify tools — same app as your Markdown and text documents.',
   },
   {
-    title: 'Optional AI (BYOK)',
-    body: 'Bring your own API key for Claude, OpenAI, Gemini, or xAI. AI is optional — editing, preview, and file tools work fully without it.',
+    title: 'AI Features (Optional and BYOK)',
+    body: 'Ask about your files, Edit with reviewable visual diffs, Create Markdown or structured files (JSON, YAML, XML, and more), and Fix validation errors in structured data — with Claude, OpenAI, Gemini, or xAI using your own API key.',
   },
   {
     title: 'Desktop-first',
@@ -61,7 +61,7 @@ export function HomePage() {
           <h2>What it is</h2>
           <p>
             Nexus is a modern desktop editor built with Electron and React. It is designed for writers,
-            developers, and anyone who jumps between prose and structured files without wanting a different
+            developers, and anyone who jumps between documents and structured files without wanting a different
             tool for each format.
           </p>
         </div>

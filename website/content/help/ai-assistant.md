@@ -1,6 +1,6 @@
 # AI assistant
 
-Nexus includes an **optional** AI panel for questions, document edits with visual review, and generating new Markdown documents. AI is **BYOK (bring your own key)** — you supply provider API keys in Settings. Nothing about day-to-day editing depends on AI: open files, preview, format tools, and folders all work without configuring a provider.
+Nexus includes an **optional** AI panel for questions, document edits with visual review, and generating new documents (Markdown or structured formats). AI is **BYOK (bring your own key)** — you supply provider API keys in Settings. Nothing about day-to-day editing depends on AI: open files, preview, format tools, and folders all work without configuring a provider.
 
 Open or close the Nexus AI dialog with `Ctrl+Shift+A`.
 
@@ -36,11 +36,15 @@ Describe changes in natural language; Nexus proposes edits and shows a **visual 
 
 ## Create mode
 
-Generate a **new Markdown document** from a description and open it as a new tab (often in preview).
+Generate a **new document** from a description — Markdown, JSON, YAML, XML, code, and more — and open it as a new tab.
 
 1. Choose **Create**.
 2. Optionally attach reference files and enable web search.
-3. Describe what to create (blog post, README, API spec, etc.) and press **Enter**.
+3. Describe what to create (blog post, README, schema, config, etc.) and press **Enter**.
+
+## Fix structured data
+
+When Validate fails on JSON, XML, YAML, or TOML, **Fix with Nexus** opens Edit mode pre-filled with the validation error so AI can propose a corrected structure you review as a diff.
 
 ## Selection-aware actions
 
