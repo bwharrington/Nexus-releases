@@ -1,0 +1,123 @@
+.help-layout {
+  padding: 2.5rem 0 4rem;
+}
+
+.help-layout__grid {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.help-nav {
+  position: sticky;
+  top: 5rem;
+  padding: 1rem 0;
+}
+
+.help-nav__title {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--slate-muted);
+}
+
+.help-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.help-nav a {
+  color: var(--slate);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.help-nav a:hover,
+.help-nav a.active {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.help-nav__back {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 0.88rem;
+  color: var(--slate-muted) !important;
+}
+
+.help-main h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  color: var(--headline);
+}
+
+.help-intro {
+  margin: 0 0 1.75rem;
+  color: var(--slate);
+  max-width: 40rem;
+}
+
+.help-card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 40rem;
+}
+
+.help-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.help-card:hover {
+  text-decoration: none;
+}
+
+.help-card:hover .help-card__title {
+  color: var(--teal);
+}
+
+.help-card__title {
+  color: var(--headline);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.help-card__summary {
+  color: var(--slate-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .help-layout__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .help-nav {
+    position: static;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1.25rem;
+  }
+
+  .help-nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+  }
+}
