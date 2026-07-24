@@ -19,7 +19,7 @@ const CAPABILITIES = [
   },
   {
     title: 'Desktop-first',
-    body: 'A native Windows desktop app with multi-tab editing, folder projects, and file associations — no browser tab required.',
+    body: 'A native Windows desktop app with multi-tab editing, folder projects, and file associations — no login, no account, and no server required.',
   },
 ] as const
 
