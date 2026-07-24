@@ -21,7 +21,7 @@ export const helpManifest: HelpDocMeta[] = [
   {
     slug: 'ai-assistant',
     title: 'AI assistant',
-    summary: 'Ask, Edit, and Create modes with multi-provider support.',
+    summary: 'Optional BYOK Ask, Edit, and Create — not required for everyday editing.',
     order: 3,
   },
   {

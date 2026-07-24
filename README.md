@@ -23,10 +23,9 @@ Open `http://localhost:5173/Nexus-releases/`. See [`website/README.md`](website/
 
 Latest release: https://github.com/bwharrington/Nexus-releases/releases/latest
 
-Typical Windows assets:
+Windows asset published by CI:
 
 - `Nexus-Setup.exe`
-- `Nexus-Portable.exe`
 
 ## GitHub Pages
 

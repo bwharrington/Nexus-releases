@@ -1,12 +1,12 @@
 # AI assistant
 
-Nexus includes an optional AI panel for questions, document edits with visual review, and generating new Markdown documents.
+Nexus includes an **optional** AI panel for questions, document edits with visual review, and generating new Markdown documents. AI is **BYOK (bring your own key)** — you supply provider API keys in Settings. Nothing about day-to-day editing depends on AI: open files, preview, format tools, and folders all work without configuring a provider.
 
 Open or close the Nexus AI dialog with `Ctrl+Shift+A`.
 
 ## Providers
 
-Configure API keys in **Settings** for one or more of:
+Configure your own API keys in **Settings** for one or more of:
 
 - Anthropic (Claude)
 - OpenAI

@@ -5,13 +5,10 @@ Install Nexus from the latest public release and open your first document in a f
 ## Download and install
 
 1. Open the [latest release](https://github.com/bwharrington/Nexus-releases/releases/latest).
-2. Download the build for your platform:
-   - **Windows:** `Nexus-Setup.exe` (installer) or `Nexus-Portable.exe`
-   - **macOS:** `Nexus.dmg`
-   - **Linux:** `Nexus.AppImage` or `Nexus.deb`
-3. Run the installer (or open the portable / AppImage / DMG) and launch Nexus.
+2. Download **`Nexus-Setup.exe`** (Windows installer).
+3. Run the installer and launch Nexus.
 
-On Windows, Markdown and reStructuredText files can open in Nexus by double-click after install. Other supported types are available via **Open with → Nexus**.
+Markdown and reStructuredText files can open in Nexus by double-click after install. Other supported types are available via **Open with → Nexus**.
 
 ## Open a file
 
@@ -31,5 +28,5 @@ For Markdown, RST, CSV, and SVG, switch between **Edit** and **Preview** (or tab
 ## Next steps
 
 - Skim [Features overview](./features-overview) for formats and tools.
-- Try the [AI assistant](./ai-assistant) when you want Ask, Edit, or Create help.
+- Try the [AI assistant](./ai-assistant) when you want optional BYOK Ask, Edit, or Create help.
 - Keep [Keyboard shortcuts](./keyboard-shortcuts) handy while you learn the app.

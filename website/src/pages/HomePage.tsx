@@ -14,12 +14,12 @@ const CAPABILITIES = [
     body: 'CSV tables, JSON, XML, YAML, and TOML with format, validate, and minify tools — same app as your prose files.',
   },
   {
-    title: 'AI assistant',
-    body: 'Ask questions, apply edits with visual diff review, or Create a new document. Claude, OpenAI, Gemini, and xAI.',
+    title: 'Optional AI (BYOK)',
+    body: 'Bring your own API key for Claude, OpenAI, Gemini, or xAI. AI is optional — editing, preview, and file tools work fully without it.',
   },
   {
-    title: 'Cross-platform',
-    body: 'Desktop builds for Windows, macOS, and Linux so your editor matches how you already work.',
+    title: 'Desktop-first',
+    body: 'A native Windows desktop app with multi-tab editing, folder projects, and file associations — no browser tab required.',
   },
 ] as const
 
@@ -33,7 +33,8 @@ export function HomePage() {
             <h1 className="hero__title">One desktop editor for markup, data, and AI-assisted writing</h1>
             <p className="hero__lede">
               Nexus is a multi-tab document editor for Markdown, reStructuredText, CSV, JSON, XML, and more —
-              with live preview, project folders, and an optional AI assistant that shows its work.
+              with live preview and project folders. An optional bring-your-own-key (BYOK) AI assistant is
+              available when you want it — not required to be productive.
             </p>
             <div className="hero__actions">
               <DownloadButton />
@@ -85,8 +86,9 @@ export function HomePage() {
           <h2>Why it helps</h2>
           <p>
             Keep Markdown docs, CSVs, and config files in one workspace with a real folder sidebar.
-            When you use AI, Edit mode proposes changes as a reviewable diff — so you stay in control of
-            what lands in the file. Less context-switching, clearer review, same keyboard-driven flow.
+            AI is optional and BYOK: when you use it, Edit mode proposes changes as a reviewable diff so you
+            stay in control. Less context-switching, clearer review, same keyboard-driven flow — with or
+            without AI.
           </p>
         </div>
       </section>
@@ -95,8 +97,7 @@ export function HomePage() {
         <div className="container">
           <h2>Download</h2>
           <p className="section__lede">
-            Grab the latest installer from the public releases page. Platform assets appear there as they are
-            published.
+            Download the Windows installer from the latest public release.
           </p>
           <div className="platform-row">
             {PLATFORM_DOWNLOADS.map((p) => (
