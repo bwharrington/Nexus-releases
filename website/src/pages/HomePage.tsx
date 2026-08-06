@@ -1,3 +1,4 @@
+import { useEffect, useId, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { DownloadButton } from '../components/DownloadButton'
 import '../components/DownloadButton.css'
@@ -47,7 +48,29 @@ const AI_SHOTS = [
   },
 ] as const
 
+type LightboxShot = (typeof AI_SHOTS)[number]
+
 export function HomePage() {
+  const [lightbox, setLightbox] = useState<LightboxShot | null>(null)
+  const titleId = useId()
+
+  useEffect(() => {
+    if (!lightbox) return
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setLightbox(null)
+    }
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    window.addEventListener('keydown', onKeyDown)
+
+    return () => {
+      document.body.style.overflow = previousOverflow
+      window.removeEventListener('keydown', onKeyDown)
+    }
+  }, [lightbox])
+
   return (
     <main>
       <section className="hero">
@@ -67,14 +90,16 @@ export function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="hero__shot">
-          <img
-            className="hero__shot-img"
-            src={asset('screenshots/workspace-consoles.png')}
-            alt="Nexus with project folders, a code editor, and stacked Claude Code and Codex consoles"
-            width={1600}
-            height={900}
-          />
+        <div className="container">
+          <figure className="shot hero__shot">
+            <img
+              className="shot__img"
+              src={asset('screenshots/workspace-consoles.png')}
+              alt="Nexus with project folders, a code editor, and stacked Claude Code and Codex consoles"
+              width={1600}
+              height={900}
+            />
+          </figure>
         </div>
       </section>
 
@@ -127,19 +152,26 @@ export function HomePage() {
           <h2>Optional Nexus AI</h2>
           <p className="section__lede">
             Bring your own key for Ask, Edit, and Create — separate from Coding Agent CLIs in the console.
-            Changes land as reviewable diffs so you stay in control.
+            Changes land as reviewable diffs so you stay in control. Click a screenshot to enlarge it.
           </p>
           <div className="ai-shot-row">
             {AI_SHOTS.map((shot) => (
               <figure key={shot.src} className="shot shot--compact">
-                <img
-                  className="shot__img"
-                  src={asset(shot.src)}
-                  alt={shot.alt}
-                  width={1200}
-                  height={675}
-                  loading="lazy"
-                />
+                <button
+                  type="button"
+                  className="shot__zoom"
+                  onClick={() => setLightbox(shot)}
+                  aria-label={`Enlarge screenshot: ${shot.caption}`}
+                >
+                  <img
+                    className="shot__img"
+                    src={asset(shot.src)}
+                    alt={shot.alt}
+                    width={1200}
+                    height={675}
+                    loading="lazy"
+                  />
+                </button>
                 <figcaption>{shot.caption}</figcaption>
               </figure>
             ))}
@@ -163,7 +195,7 @@ export function HomePage() {
         <div className="container">
           <h2>Download</h2>
           <p className="section__lede">
-            Installer and portable builds for Windows, plus macOS DMGs — from the latest public release.
+            Windows installer and portable builds from the latest public release.
             Your files stay on your machine. No account required. AI is optional and BYOK when you want it.
           </p>
           <div className="platform-row">
@@ -185,6 +217,37 @@ export function HomePage() {
           </div>
         </div>
       </section>
+
+      {lightbox ? (
+        <div
+          className="lightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={titleId}
+          onClick={() => setLightbox(null)}
+        >
+          <div className="lightbox__panel" onClick={(event) => event.stopPropagation()}>
+            <div className="lightbox__bar">
+              <p id={titleId} className="lightbox__title">
+                {lightbox.caption}
+              </p>
+              <button
+                type="button"
+                className="lightbox__close"
+                onClick={() => setLightbox(null)}
+                aria-label="Close enlarged screenshot"
+              >
+                Close
+              </button>
+            </div>
+            <img
+              className="lightbox__img"
+              src={asset(lightbox.src)}
+              alt={lightbox.alt}
+            />
+          </div>
+        </div>
+      ) : null}
     </main>
   )
 }
