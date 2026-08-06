@@ -74,20 +74,32 @@ export function HomePage() {
   return (
     <main>
       <section className="hero">
-        <div className="container hero__copy">
-          <p className="hero__brand">Nexus</p>
-          <h1 className="hero__title">One desktop editor for markup, data, and coding agents</h1>
-          <p className="hero__lede">
-            Nexus is a multi-tab document editor for Markdown, reStructuredText, CSV, JSON, XML, and more —
-            with live preview, project folders, and an integrated console with native Coding Agent CLI support.
-            An optional bring-your-own-key (BYOK) AI assistant is available when you want it — not required to
-            be productive.
-          </p>
-          <div className="hero__actions">
-            <DownloadButton />
-            <Link to="/help" className="download-btn download-btn--secondary">
-              Read the docs
-            </Link>
+        <div className="container hero__grid">
+          <div className="hero__copy">
+            <p className="hero__brand">Nexus</p>
+            <h1 className="hero__title">One desktop editor for markup, data, and coding agents</h1>
+            <p className="hero__lede">
+              Nexus is a multi-tab document editor for Markdown, reStructuredText, CSV, JSON, XML, and more —
+              with live preview, project folders, and an integrated console with native Coding Agent CLI support.
+              An optional bring-your-own-key (BYOK) AI assistant is available when you want it — not required to
+              be productive.
+            </p>
+            <div className="hero__actions">
+              <DownloadButton />
+              <Link to="/help" className="download-btn download-btn--secondary">
+                Read the docs
+              </Link>
+            </div>
+          </div>
+          <div className="hero__visual" aria-hidden="true">
+            <div className="hero__glow" />
+            <img
+              className="hero__mark"
+              src={asset('nexus.svg')}
+              alt=""
+              width={280}
+              height={280}
+            />
           </div>
         </div>
         <div className="container">
