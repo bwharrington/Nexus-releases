@@ -34,10 +34,20 @@ Dedicated toolbars and syntax highlighting for:
 - **SVG** supports dual-mode source editing and rendered preview.
 - **Compare** shows a side-by-side visual diff of any two open files.
 
+## Console & coding agents
+
+An integrated console runs a real local shell (PowerShell, cmd, bash, or zsh) beside the editor — float, dock, stack, or minimize sessions (up to 6).
+
+**Native support for existing Coding Agent CLIs:** launch **Claude Code**, **Codex**, **Grok Build**, or **Gemini CLI** from the console header, add open files as agent context from tabs or the file tree, and optionally review agent file edits as diffs. Nexus works with the CLIs you already install — it does not replace them.
+
+See [Console & coding agents](./console-terminal).
+
 ## Themes and settings
 
-Light and dark themes, visual configuration, and a searchable settings dialog (`Ctrl+,`).
+Light and dark themes, visual configuration, and a searchable settings dialog (`Ctrl+,`). Console shell and agent-review options live under **Settings → Console**.
 
 ## AI (optional, BYOK)
 
 AI is not required to use Nexus. When you want it, bring your own API key for Claude, OpenAI, Gemini, or xAI in Settings to use Ask, Edit, and Create modes — including creating and fixing structured files (JSON, XML, YAML, TOML). See [AI assistant](./ai-assistant).
+
+Nexus AI (in-app chat) is separate from Coding Agent CLIs in the Console — you can use either workflow.

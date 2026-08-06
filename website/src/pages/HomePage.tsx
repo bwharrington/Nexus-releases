@@ -14,6 +14,10 @@ const CAPABILITIES = [
     body: 'CSV tables, JSON, XML, YAML, and TOML with format, validate, and minify tools — same app as your Markdown and text documents.',
   },
   {
+    title: 'Console & coding agents',
+    body: 'A real shell beside the editor (PowerShell, cmd, bash, or zsh). Native support for existing Coding Agent CLIs — Claude Code, Codex, Grok Build, and Gemini CLI — launch in-app, add open files as context, and optionally review their file changes as diffs.',
+  },
+  {
     title: 'AI Features (Optional and BYOK)',
     body: 'Ask about your files, Edit with reviewable visual diffs, Create Markdown or structured files (JSON, YAML, XML, and more), and Fix validation errors in structured data — with Claude, OpenAI, Gemini, or xAI using your own API key.',
   },
@@ -30,11 +34,12 @@ export function HomePage() {
         <div className="container hero__grid">
           <div className="hero__copy">
             <p className="hero__brand">Nexus</p>
-            <h1 className="hero__title">One desktop editor for markup, data, and AI-assisted writing</h1>
+            <h1 className="hero__title">One desktop editor for markup, data, consoles, and AI-assisted writing</h1>
             <p className="hero__lede">
               Nexus is a multi-tab document editor for Markdown, reStructuredText, CSV, JSON, XML, and more —
-              with live preview and project folders. An optional bring-your-own-key (BYOK) AI assistant is
-              available when you want it — not required to be productive.
+              with live preview, project folders, and an integrated console with native Coding Agent CLI support.
+              An optional bring-your-own-key (BYOK) AI assistant is available when you want it — not required to
+              be productive.
             </p>
             <div className="hero__actions">
               <DownloadButton />
@@ -85,10 +90,10 @@ export function HomePage() {
         <div className="container narrow">
           <h2>Why it helps</h2>
           <p>
-            Keep Markdown docs, CSVs, and config files in one workspace with a real folder sidebar.
-            AI is optional and BYOK: when you use it, Edit mode proposes changes as a reviewable diff so you
-            stay in control. Less context-switching, clearer review, same keyboard-driven flow — with or
-            without AI.
+            Keep Markdown docs, CSVs, and config files in one workspace with a real folder sidebar and a
+            built-in console. Run Claude Code, Codex, Grok Build, or Gemini CLI beside your files — or use the
+            optional BYOK Nexus AI assistant, where Edit mode proposes changes as a reviewable diff so you stay
+            in control. Less context-switching, clearer review, same keyboard-driven flow.
           </p>
         </div>
       </section>

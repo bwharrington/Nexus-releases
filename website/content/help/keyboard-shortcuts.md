@@ -32,8 +32,19 @@ Common shortcuts in Nexus. On macOS, use `Cmd` in place of `Ctrl` where the app 
 | `Ctrl+H` | Open Find panel (Replace tab) |
 | `Ctrl+G` | Open Find panel (Go to Line) — Edit only |
 | `Ctrl+,` | Open Settings |
+| `Ctrl+\`` | New console |
 | `Enter` | In Find: Find Next; in Go to Line: Go |
 | `Escape` | Close Find / Replace / Go to Line panel |
+
+## Console
+
+| Shortcut | Action |
+| -------- | ------ |
+| `Ctrl+\`` | Open a new console |
+| `Ctrl+V` | Paste into the shell |
+| `Ctrl+C` | Copy selection, or interrupt when nothing is selected |
+
+Agent CLI launch and file-context inserts are available from the console header menus (and from tab / file-tree **Add to Console Agent**). See [Console & coding agents](./console-terminal).
 
 ## List editing
 

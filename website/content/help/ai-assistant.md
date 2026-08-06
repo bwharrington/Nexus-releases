@@ -50,6 +50,10 @@ When Validate fails on JSON, XML, YAML, or TOML, **Fix with Nexus** opens Edit m
 
 From the editor context menu, Writing Quality and related actions can run on the current selection without opening a full chat flow.
 
+## Related: Coding Agent CLIs in Console
+
+The optional Nexus AI panel is separate from **Coding Agent CLIs** (Claude Code, Codex, Grok Build, Gemini CLI) that run in the [integrated Console](./console-terminal). Those agents use their own CLIs and accounts; Nexus provides a native launch surface, file-context inserts, and optional Agent Diff review.
+
 ## Privacy note
 
 AI features send content you choose (prompt, attachments, selection) to the provider you configured. Disable AI or omit keys if you need a fully offline workflow.

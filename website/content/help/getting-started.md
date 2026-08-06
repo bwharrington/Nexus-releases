@@ -25,8 +25,13 @@ For Markdown, RST, CSV, and SVG, switch between **Edit** and **Preview** (or tab
 - `Ctrl+S` saves the current tab.
 - `Ctrl+Shift+S` saves all open files.
 
+## Console (optional)
+
+Open a console with the toolbar button or `Ctrl+\``. From the console header you can launch Coding Agent CLIs you already have installed — Claude Code, Codex, Grok Build, or Gemini CLI — and add the active file as context. See [Console & coding agents](./console-terminal).
+
 ## Next steps
 
 - Skim [Features overview](./features-overview) for formats and tools.
+- Try [Console & coding agents](./console-terminal) for the integrated shell and Agent CLIs.
 - Try the [AI assistant](./ai-assistant) when you want optional BYOK Ask, Edit, or Create help.
 - Keep [Keyboard shortcuts](./keyboard-shortcuts) handy while you learn the app.

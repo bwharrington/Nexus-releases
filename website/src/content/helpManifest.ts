@@ -15,20 +15,26 @@ export const helpManifest: HelpDocMeta[] = [
   {
     slug: 'features-overview',
     title: 'Features overview',
-    summary: 'Markup, structured data, folders, compare, export, and more.',
+    summary: 'Markup, structured data, folders, console, compare, export, and more.',
     order: 2,
+  },
+  {
+    slug: 'console-terminal',
+    title: 'Console & coding agents',
+    summary: 'Integrated shell plus native Claude Code, Codex, Grok Build, and Gemini CLI support.',
+    order: 3,
   },
   {
     slug: 'ai-assistant',
     title: 'AI assistant',
     summary: 'Optional BYOK Ask, Edit, and Create — not required for everyday editing.',
-    order: 3,
+    order: 4,
   },
   {
     slug: 'keyboard-shortcuts',
     title: 'Keyboard shortcuts',
-    summary: 'File, editing, navigation, and AI shortcuts.',
-    order: 4,
+    summary: 'File, editing, navigation, console, and AI shortcuts.',
+    order: 5,
   },
 ]
 
