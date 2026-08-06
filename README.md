@@ -5,7 +5,7 @@ Public home for the **Nexus** marketing site and downloadable installers.
 The Nexus application source stays in a private repository. This repo only publishes:
 
 - The GitHub Pages website (`website/`)
-- Release assets (Windows installers uploaded by CI when a `v*` tag is pushed in the private app repo)
+- Release assets (Windows + macOS builds uploaded by CI from the private app repo)
 
 ## Website
 
@@ -23,9 +23,12 @@ Open `http://localhost:5173/Nexus-releases/`. See [`website/README.md`](website/
 
 Latest release: https://github.com/bwharrington/Nexus-releases/releases/latest
 
-Windows asset published by CI:
+Assets published by CI (current names):
 
-- `Nexus-Setup.exe`
+- `Nexus-Windows-x64-Setup.exe`
+- `Nexus-Windows-x64-Portable.exe`
+- `Nexus-macOS-arm64.dmg`
+- `Nexus-macOS-x64.dmg`
 
 ## GitHub Pages
 

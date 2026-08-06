@@ -11,7 +11,7 @@ Configure your own API keys in **Settings** for one or more of:
 - Anthropic (Claude)
 - OpenAI
 - Google Gemini
-- xAI (Grok)
+- SpaceXAI (Grok)
 
 Production builds store keys in OS credential storage. Optional live web search can be enabled when configured (Serper).
 
