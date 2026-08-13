@@ -15,7 +15,7 @@ export const helpManifest: HelpDocMeta[] = [
   {
     slug: 'features-overview',
     title: 'Features overview',
-    summary: 'Markup, structured data, folders, console, compare, export, and more.',
+    summary: 'Markup, source, structured data, folders, console, PDF, compare, export, and more.',
     order: 2,
   },
   {

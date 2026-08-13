@@ -33,4 +33,4 @@ Pushes that change `website/**` on `main` run [`.github/workflows/deploy-website
 
 Live URL (after Pages is enabled): https://bwharrington.github.io/Nexus-releases/
 
-Download buttons link to [Releases](https://github.com/bwharrington/Nexus-releases/releases/latest). Installers are published by CI in the private Nexus app repository when a `v*` tag is pushed.
+Download buttons link to [Releases](https://github.com/bwharrington/Nexus-releases/releases/latest). Installers are published by CI in the private Nexus app repository (Windows Setup + Portable, macOS arm64/x64 DMGs).

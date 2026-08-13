@@ -5,7 +5,7 @@ Nexus includes an integrated console (real PTY shell) beside the editor — and 
 ## Open a console
 
 - Click **Console** in the toolbar, or press `Ctrl+``
-- Open up to **6** consoles: floating, docked on the right, stacked in a column, or minimized as tabs
+- Open up to **4** consoles: floating, docked on the right (**Column** or **Grid** layout), or minimized as tabs
 - Choose your shell in **Settings → Console** (auto, PowerShell, cmd, bash, or zsh)
 
 ## Native Coding Agent CLI support
@@ -24,7 +24,9 @@ What you get:
 - **One-click launch** — select an agent to start it in that console (locked until you **Restart shell**)
 - **Install help** — if the CLI is not on your PATH, Nexus shows a copyable install command (never auto-runs it)
 - **Add file as context** — from the agent menu, a tab, or the file tree (**Add to Console Agent**), insert the active or selected file the way that agent expects (`@path` or Codex `/mention`)
-- **Agent review (optional)** — Settings → Console → **Review external file changes as diffs** opens Agent Diff tabs when a CLI agent edits files on disk, so you can accept or reject hunks
+- **Slash-command catalog** — after lock, the agent menu lists session commands (`/compact`, `/clear` or `/new`, `/help` where the agent supports them) with hover descriptions
+- **Agent review (optional)** — Settings → Console → **Review external file changes as diffs** opens Agent Diff tabs when a CLI agent edits **open** text files on disk, so you can accept or reject hunks
+- **Run script from the file tree** — right-click a `.ps1`, `.bat`/`.cmd`, or `.sh` file to submit it into an unlocked console
 
 Agent CLIs are separate from the optional **Nexus AI** panel (Ask / Edit / Create with your own API key). Use either, both, or neither.
 
@@ -39,4 +41,4 @@ The console command menu inserts ready-to-run text at the prompt (you press Ente
 
 ## Learn more in the app
 
-Shell preference, stack layout, and agent review live under **Settings → Console**. Rename a console from its header or tab; layout and titles restore on the next launch (sessions themselves start fresh).
+Shell preference, panel layout, and agent review live under **Settings → Console**. Rename a console from its header or tab; layout and titles restore on the next launch (sessions themselves start fresh).

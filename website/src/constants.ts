@@ -12,4 +12,14 @@ export const PLATFORM_DOWNLOADS = [
     label: 'Windows portable',
     detail: 'Nexus-Windows-x64-Portable.exe',
   },
+  {
+    id: 'macos-arm64',
+    label: 'macOS (Apple Silicon)',
+    detail: 'Nexus-macOS-arm64.dmg',
+  },
+  {
+    id: 'macos-x64',
+    label: 'macOS (Intel)',
+    detail: 'Nexus-macOS-x64.dmg',
+  },
 ] as const

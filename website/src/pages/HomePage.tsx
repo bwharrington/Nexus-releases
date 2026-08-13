@@ -10,15 +10,19 @@ const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`
 const CAPABILITIES = [
   {
     title: 'Edit & preview',
-    body: 'Dual-mode Markdown and RST with Mermaid, live word count, and a formatting toolbar that stays out of the way until you need it.',
+    body: 'Dual-mode Markdown and RST with Mermaid, KaTeX math, live word count, and a formatting toolbar that stays out of the way until you need it.',
   },
   {
     title: 'Structured data',
     body: 'CSV tables, JSON, XML, YAML, and TOML with format, validate, and minify tools — same app as your Markdown and text documents.',
   },
   {
+    title: 'Source, images, and PDF',
+    body: 'Syntax-highlighted Python, C#, Java, PowerShell, JavaScript, TypeScript, and HTML. Raster and SVG viewers, plus view-only PDF tabs.',
+  },
+  {
     title: 'Console & coding agents',
-    body: 'A real shell beside the editor (PowerShell, cmd, bash, or zsh). Native support for existing Coding Agent CLIs — Claude Code, Codex, Grok Build, and Gemini CLI — launch in-app, add open files as context, and optionally review their file changes as diffs.',
+    body: 'A real shell beside the editor (PowerShell, cmd, bash, or zsh) — up to 4 sessions, docked in Column or Grid, floating, or minimized. Native support for existing Coding Agent CLIs — Claude Code, Codex, Grok Build, and Gemini CLI — launch in-app, add open files as context, and optionally review their file changes as diffs.',
   },
   {
     title: 'AI Features (Optional and BYOK)',
@@ -26,7 +30,7 @@ const CAPABILITIES = [
   },
   {
     title: 'Desktop-first',
-    body: 'A native desktop app with multi-tab editing, folder projects, and file associations — no login, no account, and no server required.',
+    body: 'A native desktop app with multi-tab editing, folder projects, file search, and file associations — no login, no account, and no server required.',
   },
 ] as const
 
@@ -79,7 +83,7 @@ export function HomePage() {
             <p className="hero__brand">Nexus</p>
             <h1 className="hero__title">One desktop editor for markup, data, and coding agents</h1>
             <p className="hero__lede">
-              Nexus is a multi-tab document editor for Markdown, reStructuredText, CSV, JSON, XML, and more —
+              Nexus is a multi-tab document editor for Markdown, reStructuredText, CSV, JSON, XML, source, PDF, and more —
               with live preview, project folders, and an integrated console with native Coding Agent CLI support.
               An optional bring-your-own-key (BYOK) AI assistant is available when you want it — not required to
               be productive.
@@ -107,7 +111,7 @@ export function HomePage() {
             <img
               className="shot__img"
               src={asset('screenshots/workspace-consoles.png')}
-              alt="Nexus with project folders, a code editor, and stacked Claude Code and Codex consoles"
+              alt="Nexus with project folders, a code editor, and docked Claude Code and Codex consoles"
               width={1600}
               height={900}
             />
@@ -129,7 +133,7 @@ export function HomePage() {
         <div className="container">
           <h2>Coding agents beside your files</h2>
           <p className="section__lede">
-            Run Claude Code, Codex, Grok Build, or Gemini CLI in stacked consoles — then review their disk edits
+            Run Claude Code, Codex, Grok Build, or Gemini CLI in docked or floating consoles — then review their disk edits
             as Agent Diffs you keep or undo hunk by hunk.
           </p>
           <figure className="shot">
@@ -207,7 +211,8 @@ export function HomePage() {
         <div className="container">
           <h2>Download</h2>
           <p className="section__lede">
-            Windows installer and portable builds from the latest public release.
+            Windows installer and portable builds, plus macOS disk images, from the latest public release.
+            macOS builds are unsigned until notarization is set up — Gatekeeper may ask you to allow the app.
             Your files stay on your machine. No account required. AI is optional and BYOK when you want it.
           </p>
           <div className="platform-row">

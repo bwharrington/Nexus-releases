@@ -5,8 +5,12 @@ Install Nexus from the latest public release and open your first document in a f
 ## Download and install
 
 1. Open the [latest release](https://github.com/bwharrington/Nexus-releases/releases/latest).
-2. Download **`Nexus-Windows-x64-Setup.exe`** (installer) or **`Nexus-Windows-x64-Portable.exe`** (no install).
+2. Download the build for your platform:
+   - **Windows:** `Nexus-Windows-x64-Setup.exe` (installer) or `Nexus-Windows-x64-Portable.exe` (no install)
+   - **macOS:** `Nexus-macOS-arm64.dmg` (Apple Silicon) or `Nexus-macOS-x64.dmg` (Intel)
 3. Install or run the app and launch Nexus.
+
+macOS builds are **unsigned** until notarization is set up. If Gatekeeper blocks the app (“Apple cannot check it for malicious software”), open **System Settings → Privacy & Security** and allow it, or right-click the app and choose **Open**.
 
 Your files stay local. No account is required. AI is optional (BYOK) when you want it.
 
@@ -20,7 +24,7 @@ Markdown and reStructuredText can open in Nexus by double-click after install. O
 
 ## Edit and preview
 
-For Markdown, RST, CSV, and SVG, switch between **Edit** and **Preview** (or table view for CSV) with `Ctrl+E` or the view toggle in the toolbar.
+For Markdown, RST, CSV, SVG, and Mermaid, switch between **Edit** and **Preview** (or table view for CSV) with `Ctrl+E` or the view toggle in the toolbar.
 
 ## Save your work
 
