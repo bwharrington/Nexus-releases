@@ -2,6 +2,7 @@ import { useEffect, useId, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { DownloadButton } from '../components/DownloadButton'
 import '../components/DownloadButton.css'
+import { LatestVersion } from '../components/LatestVersion'
 import { PLATFORM_DOWNLOADS, RELEASES_LATEST_URL } from '../constants'
 import './HomePage.css'
 
@@ -94,6 +95,7 @@ export function HomePage() {
                 Read the docs
               </Link>
             </div>
+            <LatestVersion />
           </div>
           <div className="hero__visual" aria-hidden="true">
             <div className="hero__glow" />
@@ -232,6 +234,7 @@ export function HomePage() {
           <div className="section__cta">
             <DownloadButton>Get the latest release</DownloadButton>
           </div>
+          <LatestVersion />
         </div>
       </section>
 

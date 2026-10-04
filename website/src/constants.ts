@@ -23,3 +23,6 @@ export const PLATFORM_DOWNLOADS = [
     detail: 'Nexus-macOS-x64.dmg',
   },
 ] as const
+
+export const RELEASES_LATEST_API_URL =
+  'https://api.github.com/repos/bwharrington/Nexus-releases/releases/latest'
