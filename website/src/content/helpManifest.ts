@@ -25,16 +25,10 @@ export const helpManifest: HelpDocMeta[] = [
     order: 3,
   },
   {
-    slug: 'ai-assistant',
-    title: 'AI assistant',
-    summary: 'Optional BYOK Ask, Edit, and Create — not required for everyday editing.',
-    order: 4,
-  },
-  {
     slug: 'keyboard-shortcuts',
     title: 'Keyboard shortcuts',
-    summary: 'File, editing, navigation, console, and AI shortcuts.',
-    order: 5,
+    summary: 'File, editing, navigation, console, and diff review shortcuts.',
+    order: 4,
   },
 ]
 
