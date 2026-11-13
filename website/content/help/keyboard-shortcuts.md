@@ -54,15 +54,9 @@ When editing lists, `Enter` continues the list:
 - Bulleted lists continue with the same bullet
 - Task lists create a new unchecked task (`- [ ]`)
 
-## AI
+## Diff review navigation
 
-| Shortcut | Action |
-| -------- | ------ |
-| `Ctrl+Shift+A` | Open / close Nexus AI dialog |
-| `Enter` | Send message or submit edit (in AI dialog) |
-| `Shift+Enter` | New line in AI dialog input |
-
-### AI Edit mode navigation
+In an Agent Diff tab:
 
 | Shortcut | Action |
 | -------- | ------ |

@@ -12,7 +12,7 @@ Install Nexus from the latest public release and open your first document in a f
 
 macOS builds are **unsigned** until notarization is set up. If Gatekeeper blocks the app (“Apple cannot check it for malicious software”), open **System Settings → Privacy & Security** and allow it, or right-click the app and choose **Open**.
 
-Your files stay local. No account is required. AI is optional (BYOK) when you want it.
+Your files stay local. No account is required.
 
 Markdown and reStructuredText can open in Nexus by double-click after install. Other supported types are available via **Open with → Nexus**.
 
@@ -39,5 +39,4 @@ Open a console with the toolbar button or `Ctrl+\``. From the console header you
 
 - Skim [Features overview](./features-overview) for formats and tools.
 - Try [Console & coding agents](./console-terminal) for the integrated shell and Agent CLIs.
-- Try the [AI assistant](./ai-assistant) when you want optional BYOK Ask, Edit, or Create help.
 - Keep [Keyboard shortcuts](./keyboard-shortcuts) handy while you learn the app.

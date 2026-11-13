@@ -47,9 +47,3 @@ See [Console & coding agents](./console-terminal).
 ## Themes and settings
 
 Light and dark themes, visual configuration, and a searchable settings dialog (`Ctrl+,`). Console shell and agent-review options live under **Settings → Console**.
-
-## AI (optional, BYOK)
-
-AI is not required to use Nexus. When you want it, bring your own API key for Claude, OpenAI, Gemini, or SpaceXAI in Settings to use Ask, Edit, and Create modes — including creating and fixing structured files (JSON, XML, YAML, TOML). See [AI assistant](./ai-assistant).
-
-Nexus AI (in-app chat) is separate from Coding Agent CLIs in the Console — you can use either workflow.

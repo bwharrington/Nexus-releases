@@ -28,8 +28,6 @@ What you get:
 - **Agent review (optional)** — Settings → Console → **Review external file changes as diffs** opens Agent Diff tabs when a CLI agent edits **open** text files on disk, so you can accept or reject hunks
 - **Run script from the file tree** — right-click a `.ps1`, `.bat`/`.cmd`, or `.sh` file to submit it into an unlocked console
 
-Agent CLIs are separate from the optional **Nexus AI** panel (Ask / Edit / Create with your own API key). Use either, both, or neither.
-
 ## Command helpers
 
 The console command menu inserts ready-to-run text at the prompt (you press Enter):
